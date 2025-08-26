@@ -1,0 +1,781 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#preloader{
+    background: #000 url(/assets/img/loader.gif) no-repeat center;
+    background-size: 50;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.all-section-wrapper {
+    background: linear-gradient(to right, #0c0908, #000c18);
+    color: #fff;
+}
+
+.general-container {
+    padding: 0px 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.container .imgs img {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 30% 70% 70% 30% / 30% 40% 70% 70%;
+    object-fit: cover;
+}
+
+.container .write-up h3 {
+    font-size: 37px;
+}
+
+.container .write-up article {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #376FB9;
+}
+
+.container .write-up p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #dbd6d6;
+}
+
+.container .hire-me-btns button:hover {
+    cursor: pointer;
+}
+
+.container .hire-me-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .hire-me-btns .socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.container .hire-me-btns .socials a {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 1px 0px #376FB9;
+}
+
+.container .hire-me-btns .socials a ion-icon {
+    color: #fff;
+    font-size: 27px;
+    padding: 5px;
+}
+
+.container .hire-me-btns .socials a:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px #376FB9;
+}
+
+.container .hire-me-btns .btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    padding: 20px 0px;
+    border-radius: 30px;
+    background-color: #376FB9;
+    margin-top: 30px;
+}
+
+.container .hire-me-btns .btns:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 1px 1px 4px 1px #376FB9;
+}
+
+.container .hire-me-btns .btns button {
+    border: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container .icons {
+    background-color: #fff;
+    padding: 9px 13px;
+    border-radius: 30px;
+}
+
+.container .icons ion-icon {
+    color: black;
+}
+
+/* =======  NAV ======== */
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #151515;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.nav-section .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+}
+
+.nav-section .about-me:hover {
+    background-color: #363636;
+}
+
+
+/* =========== About =============== */
+
+.general-wrapper {
+    /* background: linear-gradient(to right, #0c0908, #000c18); */
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 30px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-section .specifics {
+    color: #376FB9;
+}
+
+.about-section .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.about-section .main-container .about-wrapper .name {
+    color: #ffff;
+}
+
+.about-section .main-container .about-wrapper p {
+    color: #c0c0c0;
+}
+
+#available {
+    color: #1ca433;
+}
+
+.about-section h2 {
+    font-size: 50px;
+}
+
+.about-section h3 {
+    font-size: 50px;
+    color: #aacfff;
+}
+
+.about-section h5 {
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.about-section p {
+    line-height: 45px;
+}
+
+.about-section .main-container .about-wrapper .btns {
+    margin: 2rem 0;
+    border: 1px solid #376FB9;
+    width: 10rem;
+    padding: 10px;
+    border-radius: 20px;
+    background: #376FB9;
+}
+
+
+.about-section .main-container .about-wrapper .btns:hover {
+    cursor: pointer;
+    background: transparent;
+}
+
+.about-section .main-container .about-wrapper .btns button:hover {
+    cursor: pointer;
+}
+
+.about-section .main-container .about-wrapper .btns a {
+    text-decoration: none;
+}
+
+.about-section .main-container .about-wrapper .btns button {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.about-section .main-container .experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.about-section .main-container .experience p {
+    color: #c0c0c0;
+    font-size: 17px;
+}
+
+.about-section .main-container .experience .border-experience {
+    padding: 50px 50px;
+    box-shadow: 0px 0px 1px 2px #376FB9;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+}
+
+.about-section .main-container .experience .border-experience:hover {
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 1px 2px #376FB9;
+}
+
+.sub-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+    color: #ffff;
+    margin-top: 5rem;
+}
+
+
+.sub-about-wrapper h2 {
+    font-size: 50px;
+}
+
+.sub-about-wrapper .specifics {
+    color: #376FB9;
+}
+
+.sub-about-wrapper .language-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-about-wrapper .language-wrapper .my-html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 170px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    /* box-shadow: 0px 0px 1px 1px #376FB9; */
+    box-shadow: none;
+}
+
+.sub-about-wrapper .language-wrapper .my-html img {
+    margin-bottom: 20px;
+}
+
+.sub-about-wrapper .language-wrapper .my-html:hover {
+    cursor: pointer;
+    background-color: #1b1b1b;
+}
+
+.sub-about-wrapper .language-wrapper .my-html img {
+    width: 70px;
+}
+
+
+/* =========== My Services =========== */
+.my-services-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 20rem;
+}
+
+.my-services-wrapper h2 {
+    font-size: 50px;
+}
+
+.specifics {
+    color: #376FB9;
+}
+
+.my-services-wrapper .my-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.my-services-wrapper .my-services .services {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    align-items: center;
+    text-align: start;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    box-shadow: 0px 0px 1px 1px transparent;
+    color: #edecec;
+}
+
+.my-services-wrapper .my-services .services h3 {
+    font-size: 25px;
+}
+
+.my-services-wrapper .my-services .services:hover {
+    background-color: #1b1b1b;
+}
+
+.my-services-wrapper .my-services img {
+    width: 150px;
+}
+
+/* ============My project wrapper ========== */
+
+.my-projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 20rem;
+}
+
+.my-projects-wrapper h2 {
+    font-size: 50px;
+}
+
+.my-projects-wrapper .my-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 40px;
+}
+
+.my-projects-wrapper .my-projects .project {
+    width: 100%;
+}
+
+.my-projects-wrapper .my-projects .project img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.my-projects-wrapper .my-projects .project img:hover {
+    cursor: pointer;
+}
+
+
+/* ========== Contact me wrapper =========== */
+.contact-me-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 60px;
+    margin-top: 10rem;
+}
+
+.contact-me-wrapper h2 {
+    font-size: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form input {
+    padding: 5px;
+    height: 45px;
+    width: 27rem;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #376FB9;
+    color: #fff;
+}
+
+form input::placeholder {
+    font-size: 15px;
+    color: #6f6f6f;
+    padding: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    padding: 15px;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 5px 1px #376FB9;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-me-wrapper .contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem
+}
+
+.contact-me-wrapper .contact-me img {
+    width: 400px;
+    /* animation: updown 4.5s ease-in-out infinite; */
+}
+
+/* @keyframes updown{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-50px);}
+    100% {transform: translateY(0);}
+} */
+
+.contact-me-wrapper .contact-me button {
+    padding: 5px;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #376FB9;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* =============== Footer ============== */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    color: #aeaeae;
+    text-align: center;
+}
+
+/* -------- FOR SCREEN 1114px -------- */
+
+@media (max-width: 1114px) {
+    .sub-about-wrapper .language-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1113px) {
+    .general-container {
+        display: flex;
+    }
+
+    .about-section .main-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sub-contact-form {
+        display: none;
+    }
+
+    .my-projects-wrapper {
+        margin-top: 10rem;
+    }
+
+    .my-services-wrapper {
+        margin-top: 10rem;
+    }
+
+    .contact-me-wrapper {
+        height: 40vh;
+        margin-top: 15rem;
+    }
+
+    .sub-about-wrapper {
+        margin-top: 10rem;
+    }
+
+    .sub-about-wrapper .language-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+}
+
+
+/* -------- FOR SCREEN 800px -------- */
+
+@media (max-width: 767px) {
+
+    /* ======= Home ====== */
+    .general-container {
+        padding: 30px 20px 120px 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        height: 100vh;
+    }
+
+    .container .imgs img {
+        height: 20rem;
+        width: 21rem;
+        border-radius: 30% 70% 70% 30% / 30% 40% 70% 70%;
+        object-fit: cover;
+    }
+
+    .container .write-up h3 {
+        font-size: 23px;
+
+    }
+
+    .container .write-up article {
+        font-size: 21px;
+        line-height: 35px;
+        color: #376FB9;
+        margin-bottom: 10px;
+    }
+
+    .container .write-up p {
+        font-size: 15px;
+        line-height: 25px;
+        color: #e7e5e5;
+    }
+
+    .container .hire-me-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .container .hire-me-btns .socials a ion-icon {
+        font-size: 30px;
+    }
+
+    /* =========== Nav ========== */
+
+    .nav-section .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 5px;
+        width: 100%;
+    }
+
+    .nav-section p {
+        display: none;
+    }
+
+
+    .nav-section .about-me ion-icon {
+        font-size: 25px;
+    }
+
+    /* ======== About ========= */
+    .about-section {
+        padding: 40px;
+    }
+
+    .about-section .main-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100vh;
+    }
+
+    .about-section .main-container .experience {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .about-section h2 {
+        font-size: 35px;
+    }
+
+    .about-section .main-container .about-wrapper p {
+        color: #c0c0c0;
+    }
+
+    /* ============ Languages i Know =========== */
+    .sub-about-wrapper {
+        margin-top: 70rem;
+    }
+
+    .sub-about-wrapper .language-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sub-about-wrapper h2 {
+        font-size: 35px;
+    }
+
+
+    /* ============ my projects wrapper ============= */
+    .my-projects-wrapper {
+        margin-top: 60rem;
+    }
+
+    .my-projects-wrapper .my-projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .my-projects-wrapper h2 {
+        font-size: 35px;
+    }
+
+    .my-projects-wrapper .my-projects .project img {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    /* ================= my services wrapper ============== */
+    .my-services-wrapper {
+        margin-top: 60rem;
+    }
+
+    .my-services-wrapper .my-services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+
+    .my-services-wrapper h2 {
+        font-size: 35px;
+    }
+
+
+    /* ============ Contact ============== */
+
+    .contact-me-wrapper {
+        display: flex;
+        height: 60vh;
+        gap: 40px;
+        margin-top: 23rem;
+    }
+
+    form button {
+        padding: 5px;
+        height: 45px;
+        width: 20rem;
+        border: transparent;
+        background-color: #376FB9;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 20px;
+    }
+
+
+    form input {
+        padding: 5px;
+        height: 45px;
+        width: 20rem;
+    }
+
+    .contact-me-wrapper .contact-me .sub-contact-form {
+        display: none;
+    }
+
+    .contact-me-wrapper h2 {
+        font-size: 35px;
+    }
+
+    .footer {
+        display: flex;
+        height: 25vh;
+    }
+
+    .footer span {
+        font-size: 13px;
+        line-break: loose;
+    }
+}
