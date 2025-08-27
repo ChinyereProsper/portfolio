@@ -14,7 +14,7 @@ body {
 
 #preloader{
     background: #000 url(/assets/img/loader.gif) no-repeat center;
-    background-size: 50;
+    background-size: 50%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -121,7 +121,7 @@ body {
 }
 
 .container .hire-me-btns .btns button {
-    border: transparent;
+    border: none;
     background-color: transparent;
     font-size: 20px;
     color: #fff;
@@ -201,7 +201,7 @@ body {
 }
 
 .about-section .main-container .about-wrapper .name {
-    color: #ffff;
+    color: #fff;
 }
 
 .about-section .main-container .about-wrapper p {
@@ -333,15 +333,12 @@ body {
 
 .sub-about-wrapper .language-wrapper .my-html img {
     margin-bottom: 20px;
+    width: 70px;
 }
 
 .sub-about-wrapper .language-wrapper .my-html:hover {
     cursor: pointer;
     background-color: #1b1b1b;
-}
-
-.sub-about-wrapper .language-wrapper .my-html img {
-    width: 70px;
 }
 
 
@@ -464,7 +461,7 @@ form input {
     height: 45px;
     width: 27rem;
     background-color: transparent;
-    border: transparent;
+    border: none;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 1px #376FB9;
     color: #fff;
@@ -483,7 +480,7 @@ textarea {
     width: 100%;
     height: 200px;
     background-color: transparent;
-    border: transparent;
+    border: none;
     box-shadow: 0px 0px 5px 1px #376FB9;
     color: #fff;
     font-size: 15px;
@@ -493,7 +490,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem
+    gap: 10rem;
 }
 
 .contact-me-wrapper .contact-me img {
@@ -512,7 +509,7 @@ textarea {
     height: 45px;
     width: 100%;
     border-radius: 10px;
-    border: transparent;
+    border: none;
     background-color: #376FB9;
     color: #fff;
     font-size: 20px;
@@ -688,7 +685,7 @@ textarea {
     .sub-about-wrapper .language-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 10px;
     }
 
     .sub-about-wrapper h2 {
@@ -747,7 +744,7 @@ textarea {
         padding: 5px;
         height: 45px;
         width: 20rem;
-        border: transparent;
+        border: none;
         background-color: #376FB9;
         border-radius: 5px;
         color: #fff;
@@ -778,4 +775,5 @@ textarea {
         font-size: 13px;
         line-break: loose;
     }
+
 }
