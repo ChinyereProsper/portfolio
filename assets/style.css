@@ -775,5 +775,28 @@ textarea {
         font-size: 13px;
         line-break: loose;
     }
+}
 
+/* ============== For 380 ============== */
+
+@media (max-width: 380px) {
+
+    .general-container {
+        margin-bottom: 5rem;
+    }
+
+    .sub-about-wrapper .language-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .container .imgs img {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .sub-about-wrapper .language-wrapper .my-html {
+    height: 150px;
+    width: 150px;
+    }
 }
